@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <style>
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Roboto", sans-serif;
+            color: white; /* Text color changed to white */
+        }
+        body {
+            background-color: #F5F5F5; /* Background color */
+        }
+        #grad1 {
+            background-color: #2fbec5; /* Green background color */
+            background-image: linear-gradient(to bottom right, #374863, #0062be); /* Gradient */
+        }
+        .w3-sidebar {
+            width: 125px;
+            background: #fffaeb; /* Dark background color */
+            color: rgb(0, 0, 0);
+            padding-top: 20px;
+        }
+        #main {
+            padding-left: 145px; /* Adjusted the padding to center the text */
+            padding-right: 20px; /* Added padding to the right side */
+            text-align: center; /* Center the entire text */
+        }
+        @media only screen and (max-width: 600px) {
+            #main {
+                padding-left: 0;
+            }
+        }
+        .button1 {
+            background-color: white; /* GitHub button background color changed to white */
+            border: none;
+            cursor: pointer;
+            color: black; /* GitHub button text color changed to black */
+            padding: 15px 30px; /* Made the button bigger */
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 18px; /* Increased font size */
+            border-radius: 5px;
+        }
+        .button1:hover {
+            background-color: #555; /* Hover color */
+            color: white;
+            transition: .5s;
+        }
+        .w3-bar-item {
+            padding: 12px 0;
+        }
+        .w3-sidebar a {
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            transition: 0.3s;
+        }
+        .w3-sidebar a:hover {
+            background-color: #555;
+        }
+        #home h1,
+        #home p,
+        #about h2,
+        #about h3,
+        #about p,
+        #portfolio h2,
+        #portfolio h3,
+        #contact h2,
+        #contact hr {
+            color: white; /* Text color */
+        }
+        #about p {
+            margin: 20px 0;
+            font-size: 18px;
+        }
+        .w3-white .w3-wide {
+            margin: 0;
+        }
+        .skills {
+            background-color: #3F51B5; /* Blue background color for skills */
+            padding: 20px;
+            text-align: center;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .skills h3 {
+            color: white;
+        }
+        .closer-bigger {
+            margin-right: 10px; /* Adjust the margin to control spacing */
+        }
+        .closer-bigger i {
+            font-size: 36px; /* Larger icon size */
+        }
+        /* Resume Section */
+        .resume {
+            background-color: #FFFFFF; /* White background color */
+            padding: 20px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        .resume h2 {
+            color: #333;
+        }
+        .resume iframe {
+            width: 100%;
+            height: 600px;
+        }
+        /* Centered Heading and Lines */
+        .section-heading {
+            text-align: center;
+        }
+        .section-heading h2 {
+            margin: 0 auto;
+        }
+        .section-content {
+            text-align: center; /* Center-align the content */
+        }
+        .section-content hr {
+            margin: 0 auto;
+            width: 250px;
+        }
+        .icon-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .icon-list li {
+            margin: 0 30px;
+            text-align: center;
+            font-size: 36px;
+        }
+        .icon-list a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+        .icon-list i {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+<div id="grad1">
+    <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+        <a href="#about" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>About Me</p>
+        </a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-briefcase w3-xxlarge"></i>
+            <p>Portfolio</p>
+        </a>
+        <a href="#resume" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-file-pdf w3-xxlarge"></i>
+            <p>Resume</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contact</p>
+        </a>
+    </nav>
+
+    <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+        <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+            <a href="#about" class="w3-bar-item w3-button" style="width: 33.33% !important">About Me</a>
+            <a href="#portfolio" class="w3-bar-item w3-button" style="width: 33.33% !important">Portfolio</a>
+            <a href="#resume" class="w3-bar-item w3-button" style="width: 33.33% !important">Resume</a>
+            <a href="#contact" class="w3-bar-item w3-button" style="width: 33.33% !important">Contact</a>
+        </div>
+    </div>
+
+    <div class="w3-sidebar w3-bar-block w3-small w3-hide-large w3-hide-medium w3-center">
+        <a href="#about" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-user w3-xxlarge"></i>
+            <p>About Me</p>
+        </a>
+        <a href="#portfolio" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-briefcase w3-xxlarge"></i>
+            <p>Portfolio</p>
+        </a>
+        <a href="#resume" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-file-pdf w3-xxlarge"></i>
+            <p>Resume</p>
+        </a>
+        <a href="#contact" class="w3-bar-item w3-button w3-hover-black">
+            <i class="fa fa-envelope w3-xxlarge"></i>
+            <p>Contact</p>
+        </a>
+    </div>
+
+    <div class="w3-content w3-padding-64" id="main">
+        <header class="w3-container w3-padding-32 w3-center" id="home">
+            <h1 class="w3-jumbo">Nikunj Gupta</h1>
+            <p class="w3-large">Aspiring Computer Professional</p>
+        </header>
+
+        <div class="w3-content w3-justify w3-text-grey w3-padding-32" id="about">
+            <div class="section-heading">
+                <h2>About Me</h2>
+            </div>
+            <div class="section-content">
+                <hr>
+                <p>Hello! I'm Nikunj Gupta, a high school senior fueled by an unwavering passion for computer science. Throughout my 
+                    high school career, I've immersed myself in the world of programming, developing skills in Java, Python and HTML.
+                    These skills have provided me with a strong foundation to embark on exciting coding projects, many of which you can 
+                    explore down below. These projects have not only refined my coding skills but further ignited my curiosity to delve 
+                    deeper into the diverse realms of computer science. As the future progresses, I am dedicated to remaining at the forefront
+                    of technological advancements and contributing my insights to shape the future of this transformative field.
+                </p>
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="portfolio">
+            <div class="section-heading">
+                <h2>Portfolio</h2>
+            </div>
+            <div class="section-content">
+                <hr>
+                <p>Check out my GitHub profile:</p>
+                <a href="https://github.com/nikunjgupta1" class="button1" target="_blank">GitHub Profile</a>
+            </div>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="Skills" id="tools">
+          <h2>Languages</h2>
+          <hr>
+          <ul class="icon-list">
+              <li>
+                  <a href="https://www.python.org/" target="_blank">
+                      <i class="fab fa-python"></i>
+                      <span>Python</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://www.oracle.com/java/" target="_blank">
+                      <i class="fab fa-java"></i>
+                      <span>Java</span>
+                  </a>
+              </li>
+              <li>
+                  <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank">
+                      <i class="fab fa-html5"></i>
+                      <span>HTML</span>
+                  </a>
+              </li>
+          </ul>
+      </div>
+
+        <!-- Resume Section -->
+        <div class="w3-content w3-padding-64" id="resume">
+            <div class="section-heading">
+                <h2>Resume</h2>
+            </div>
+            <div class="section-content">
+                <hr>
+                <!-- Embed Google Drive link using an <iframe> -->
+                <iframe src="https://drive.google.com/file/d/14jTTWAw7JHbFMpXAvYjJaNAIN70n2lVu/view?usp=sharing" style="width:100%; height:600px;"></iframe>
+            </div>
+        </div>
+
+        <div class="w3-content w3-padding-64" id="contact">
+            <div class="section-heading">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="section-content">
+                <hr>
+                <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"></i> Email: champnikunj@gmail.com</p>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
